@@ -1,0 +1,166 @@
+:root {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  color: #1f2937;
+  background-color: #f9fafb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 24px;
+}
+
+.app {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 1.75rem;
+  margin-bottom: 24px;
+}
+
+.status {
+  color: #6b7280;
+}
+
+.error {
+  color: #dc2626;
+  font-weight: 500;
+}
+
+.empty {
+  color: #6b7280;
+}
+
+.transactions-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.transactions-table th,
+.transactions-table td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.transactions-table th {
+  background: #f3f4f6;
+  font-weight: 600;
+  color: #374151;
+}
+
+.transactions-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.analyze-button {
+  display: inline-block;
+  margin-bottom: 16px;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  background: #2563eb;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.analyze-button:hover:not(:disabled) {
+  background: #1d4ed8;
+}
+
+.analyze-button:disabled {
+  background: #93c5fd;
+  cursor: not-allowed;
+}
+
+.flagged-list {
+  margin-bottom: 24px;
+}
+
+.flagged-list h2 {
+  font-size: 1.25rem;
+  margin-bottom: 12px;
+}
+
+.flagged-card {
+  margin-bottom: 12px;
+  padding: 12px 16px;
+  border: 1px solid #e2e8f0;
+  border-left-width: 4px;
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+.flagged-card.risk-low {
+  border-left-color: #f59e0b;
+}
+
+.flagged-card.risk-medium {
+  border-left-color: #f97316;
+}
+
+.flagged-card.risk-high {
+  border-left-color: #dc2626;
+}
+
+.flagged-card-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 6px;
+}
+
+.flagged-id {
+  font-weight: 600;
+}
+
+.risk-badge {
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.risk-low .risk-badge {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.risk-medium .risk-badge {
+  background: #ffedd5;
+  color: #c2410c;
+}
+
+.risk-high .risk-badge {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.flagged-reason {
+  margin: 0;
+  color: #374151;
+  line-height: 1.5;
+}
+
+.flagged-badge {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 2px 8px;
+  border-radius: 12px;
+  background: #fee2e2;
+  color: #b91c1c;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
